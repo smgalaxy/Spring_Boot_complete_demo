@@ -30,7 +30,7 @@ class DepartmentServiceTest {
                 .thenReturn(department);
     }
     @Test
-    //    @DisplayName("Get data based on valid department name")
+    @DisplayName("Get data based on valid department name")
     public void whenValidDepartmentName_thenDepartmentShouldFound(){
         String departmentName = "Software-Dev";
         Department found = departmentService.getByDepartmentName(departmentName);
